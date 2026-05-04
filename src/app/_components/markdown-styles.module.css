@@ -1,12 +1,25 @@
+@reference "../globals.css";
+
 .markdown {
   @apply text-lg leading-relaxed;
 }
 
 .markdown p,
 .markdown ul,
-.markdown ol,
-.markdown blockquote {
+.markdown ol {
   @apply my-6;
+}
+
+.markdown blockquote {
+  @apply my-8 border-l-4 border-neutral-300 bg-neutral-50 px-5 py-4 text-neutral-700 dark:border-slate-600 dark:bg-slate-800/60 dark:text-slate-300;
+}
+
+.markdown blockquote p {
+  @apply my-0;
+}
+
+.markdown blockquote p + p {
+  @apply mt-4;
 }
 
 .markdown h2 {

@@ -1,16 +1,14 @@
 import Link from "next/link";
-import CoverImage from "./cover-image";
 import DateFormatter from "./date-formatter";
 
 type Props = {
   title: string;
-  coverImage?: string;
   date: string;
   excerpt: string;
   slug: string;
 };
 
-export function PostPreview({ title, coverImage, date, excerpt, slug }: Props) {
+export function PostPreview({ title, date, excerpt, slug }: Props) {
   return (
     <div>
       <h3 className="text-xl mb-1 leading-snug font-semibold">
